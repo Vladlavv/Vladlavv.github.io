@@ -123,6 +123,7 @@ function generateRowHTML(video) {
 // @TODO: Put your code here
 
 function showAllVideos(){
+  document.querySelector('#results').innerHTML = "";
   for (let i = 0; i < videosList.length; i++){
     document.querySelector('#results').innerHTML += generateRowHTML(videosList[i]);
   }
